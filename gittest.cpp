@@ -1,5 +1,21 @@
 #include<iostream>
 using namespace std;
-int main{
-	cout<<"Hello World";
+class hero{
+public:
+	int health;
+	char level;
+	void print();
+};
+void hero::print(){
+
+		cout<<"Health : "<<health<<endl;
+		cout<<"Level: "<<level<<endl;
+			}
+
+
+int main(){
+hero ramesh;
+ramesh.health=40;
+ramesh.level='a';
+ramesh.print();
 }
